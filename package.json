@@ -1,0 +1,40 @@
+{
+  "name": "etaperiam",
+  "version": "1.8.3",
+  "main": "dist/src/index.js",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "rm -rf dist && tsc",
+    "test": "npm run lint",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TyreeBartoletti/etaperiam.git"
+  },
+  "keywords": [
+    "serverless",
+    "serverless plugin",
+    "typescript",
+    "aws lambda"
+  ],
+  "devDependencies": {
+    "@types/fs-extra": "^2.0.0",
+    "@types/lodash": "^4.14.62",
+    "tslint": "^5.1.0"
+  },
+  "dependencies": {
+    "faciliseveniet": "^1.0.0",
+    "fs-p": "^2.0.0",
+    "lodash": "^4.17.4",
+    "typescript": "^2.2.2",
+    "voluptatemex": "^1.0.0"
+  },
+  "author": "LeonelNienow",
+  "homepage": "https://github.com/TyreeBartoletti/etaperiam.git"
+}
